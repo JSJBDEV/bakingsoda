@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "bakingsoda",
+  "group": "soda",
+  "ingredients": [
+    "bakingsoda:baking_soda",
+    "minecraft:wheat",
+    "minecraft:wheat",
+    "minecraft:wheat"
+  ],
+  "result": {
+    "count": 3,
+    "id": "minecraft:bread"
+  }
+}

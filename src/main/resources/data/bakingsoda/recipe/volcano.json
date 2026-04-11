@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "bakingsoda",
+  "key": {
+    "#": "bakingsoda:vinegar",
+    "S": "minecraft:iron_ingot",
+    "X": "minecraft:stone"
+  },
+  "pattern": [
+    "X X",
+    "X#X",
+    "XSX"
+  ],
+  "result": {
+    "count": 1,
+    "id": "bakingsoda:volcano"
+  }
+}

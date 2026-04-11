@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "bakingsoda",
+  "key": {
+    "#": "minecraft:bucket",
+    "A": "minecraft:black_concrete_powder",
+    "X": "minecraft:copper_ingot",
+    "Q": "minecraft:quartz_block"
+  },
+  "pattern": [
+    "QAX",
+    "X#X",
+    "XXX"
+  ],
+  "result": {
+    "count": 1,
+    "id": "bakingsoda:fire_extinguisher"
+  }
+}

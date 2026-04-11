@@ -1,0 +1,18 @@
+{ "model": {
+  "type": "range_dispatch",
+  "property": "custom_model_data",
+  "index": 0,
+  "entries": [
+    {
+      "threshold": 7777,
+        "model": {
+          "type": "model",
+          "model": "bakingsoda:item/volcano"
+        }
+    }
+  ],
+  "fallback": {
+    "type": "model",
+    "model": "minecraft:item/stick"
+  }
+}}

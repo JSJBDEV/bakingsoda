@@ -93,6 +93,12 @@ public class VolcanoBlock extends BaseEntityBlock implements BlockWithElementHol
                 vbe.setTicks(500);
                 entity.kill(sl);
             }
+            if(item.getItem().has(DataComponents.DYE))
+            {
+                VolcanoBlockEntity vbe = (VolcanoBlockEntity) level.getBlockEntity(pos);
+                vbe.setDye(item.getItem());
+                entity.kill(sl);
+            }
         }
     }
 }

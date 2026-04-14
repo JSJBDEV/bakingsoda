@@ -1,17 +1,12 @@
 package ace.actually.bakingsoda.blocks;
 
 import ace.actually.bakingsoda.BakingSoda;
-import net.minecraft.ChatFormatting;
-import net.minecraft.client.resources.model.EquipmentClientInfo;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.particles.DustParticleOptions;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.world.item.DyeColor;
-import net.minecraft.world.item.DyeItem;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
@@ -56,6 +51,13 @@ public class VolcanoBlockEntity extends BlockEntity {
         if(stack.has(DataComponents.DYE))
         {
             setColour(stack.get(DataComponents.DYE).getFireworkColor());
+        }
+    }
+    public void setDyedItem(ItemStack stack)
+    {
+        if(stack.has(DataComponents.DYED_COLOR))
+        {
+            setColour(stack.get(DataComponents.DYED_COLOR).rgb());
         }
     }
 

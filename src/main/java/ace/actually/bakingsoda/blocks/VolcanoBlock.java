@@ -20,7 +20,9 @@ import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.component.CustomModelData;
+import net.minecraft.world.item.component.DyedItemColor;
 import net.minecraft.world.item.context.BlockPlaceContext;
+import net.minecraft.world.item.crafting.FireworkStarRecipe;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.entity.BlockEntity;
@@ -98,6 +100,13 @@ public class VolcanoBlock extends BaseEntityBlock implements BlockWithElementHol
                 VolcanoBlockEntity vbe = (VolcanoBlockEntity) level.getBlockEntity(pos);
                 vbe.setDye(item.getItem());
                 entity.kill(sl);
+            }
+            if(item.getItem().has(DataComponents.DYED_COLOR))
+            {
+                VolcanoBlockEntity vbe = (VolcanoBlockEntity) level.getBlockEntity(pos);
+                vbe.setDyedItem(item.getItem());
+                entity.kill(sl);
+
             }
         }
     }
